@@ -23,7 +23,7 @@
   .raiting__box {
     border: 2px solid #fff;
       background-color: #ffffff;
-      border-radius: 50px;
+      border-radius: 8px;
       max-width: 1199px;
       height: 380px;
       margin-bottom: 50px;
@@ -36,8 +36,8 @@
 
       @media screen and (min-width: 768px) {
         border: 2px solid #fff;
-          background-color: #804cb9;
-          border-radius: 50px;
+        /*   background-color: #804cb9; */
+          border-radius: 6px;
           max-width: 1199px;
           height: 205px;
           margin-bottom: 50px;
@@ -46,31 +46,14 @@
           -webkit-box-shadow: 0px 0px 10px 3px #F9F9F9;
           box-shadow: 0px 0px 10px 3px #F9F9F9;
           align-items: center;
+          width: 768px;
+          margin-bottom: 75px;
       }
 
-    @media screen and (min-width: 768px) {
-    border: 2px solid #fff;
-    background-color: #804cb9;
-    border-radius: 50px;
-    max-width: 1199px;
-    height: 205px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-    -webkit-box-shadow: 0px 0px 10px 3px #F9F9F9;
-      box-shadow: 0px 0px 10px 3px #F9F9F9;
-    align-items: center;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 768px;
-      margin-bottom: 75px;
-      flex-direction: row;
-    }
     @media screen and (min-width: 1200px) {
-      width: 1025px;
+      width: 965px;
       flex-direction: row;
-      height: 170px;
+      height: 160px;
     }
   }
   
@@ -134,18 +117,18 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    box-shadow: inset -3px 0 0 #804cb9;
+    /* box-shadow: inset -3px 0 0 #804cb9; */
     background-color: #fff;
     }
 
     @media screen and (min-width: 1200px) {
     border-radius: 44px 0 0 44px;
-  height: 170px;
+  height: 150px;
   width: 500px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: inset -3px 0 0 #804cb9;
+  /* box-shadow: inset -3px 0 0 #804cb9; */
   background-color: #fff;
   }
 }
@@ -323,7 +306,7 @@
       font-family: Fredoka One;
       color: #2e3337;
       text-transform: uppercase;
-      line-height: 1.2;
+      line-height: 1.7;
       text-align: center;
       margin-left: 111px;
       margin-right: 100px;
@@ -342,13 +325,12 @@
     @media screen and (min-width: 1200px) {
     font-size: 22px;
       font-family: Fredoka One;
-      color: #fff;
       text-transform: uppercase;
-      line-height: 1.2;
+      line-height: 1.4;
       text-align: center;
-      margin-left: 10px;
-      margin-right: 36px;
-      margin-top: 0px;
-      width: 212px;
+      margin-left: -64px;
+      margin-right: 50px;
+      margin-top: 12px;
+      width: 290px;
     }
   }

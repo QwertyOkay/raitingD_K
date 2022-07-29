@@ -347,7 +347,7 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 12px;
-  background-image: linear-gradient(to right, #5265ce 0%, #360033 51%, #5265ce 100%);
+  background-image: linear-gradient(to right, #1f59ff 10%, #9500d0 51%, #1f59ff 100%);
   background-size: 200% auto;
   /* box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
   -webkit-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
@@ -371,38 +371,13 @@ body {
    webkit-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
    -moz-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
    box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63); */
-  box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5), 0 0.25rem 0.6rem 0 rgb(87, 63, 234) inset;
-}
-@media screen and (min-width: 768px) {
-  .button__hero {
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    background-color: #78be20;
-    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
-    font-size: 26.285px;
-    font-family: Fredoka One;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;
-    text-shadow: 0px 3px 0.99px rgba(0, 0, 0, 0.49);
-    transition-duration: var(--duration);
-    transition-timing-function: var(--function);
-    width: 220px;
-    height: 60px;
-    border-color: rgb(109, 140, 24);
-    border-radius: 20px;
-    box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5), 0 -0.25rem 1.5rem rgb(50, 93, 48) inset, 0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset, 0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
-  }
+  box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5), 0 -0.25rem 1rem rgb(174, 2, 228) inset, 0 0.75rem 0.5rem rgba(31, 36, 31, 0.4) inset, 0 0.25rem 0.6rem 0 rgb(87, 63, 234) inset;
 }
 @media screen and (min-width: 1200px) {
   .button__hero {
     border: none;
     cursor: pointer;
     border-radius: 20px;
-    background-color: #78be20;
-    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
     font-size: 26.285px;
     font-family: Fredoka One;
     color: rgb(255, 255, 255);
@@ -413,9 +388,7 @@ body {
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
     width: 240px;
     height: 60px;
-    border-color: rgb(109, 140, 24);
     border-radius: 20px;
-    box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5), 0 -0.25rem 1.5rem rgb(50, 93, 48) inset, 0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset, 0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
   }
 }
 @media screen and (min-width: 1900px) {
@@ -671,7 +644,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__slots {
-    padding-top: 49px;
+    padding-top: 64px;
     background-color: #fff;
     margin: 0px auto;
     height: 145px;
@@ -686,7 +659,7 @@ body {
     background-color: #fff;
     margin: 0px auto;
     height: 215px;
-    width: 310px;
+    width: 320px;
     border-radius: 0 0 50% 50%/0 0 30px 30px;
   }
 }
@@ -722,20 +695,11 @@ body {
 .title__hero {
   font-size: 20px;
   font-family: Fredoka One;
-  color: #2e3337;
+  color: #313841;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .title__hero {
-    font-size: 22px;
-    font-family: Fredoka One;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;
-  }
 }
 @media screen and (min-width: 1200px) {
   .title__hero {
@@ -748,7 +712,7 @@ body {
 }
 
 .accent-color {
-  color: #5265ce;
+  color: #4066ff;
 }
 
 .hero__box {
@@ -763,28 +727,14 @@ body {
   margin-top: -760px;
   margin-left: 3px;
 }
-@media screen and (min-width: 768px) {
-  .hero__box {
-    background-color: #804cb9;
-    border-radius: 0 0 15% 15%;
-    border: 4px solid #d8b367;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
-    /* -webkit-box-shadow: 0px 0px 10px 3px #f9da49;
-      box-shadow: 0px 0px 10px 3px #f9da49; */
-    margin-top: -750px;
-    margin-left: 3px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero__box {
-    background-color: #804cb9;
-    border-radius: 0 0 15% 15%;
-    border: 4px solid #d8b367;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
+    /* background-color: #804cb9;
+      border-radius: 0 0 15% 15%;
+      border: 4px solid #d8b367;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 20px; */
     /* -webkit-box-shadow: 0px 0px 10px 3px #f9da49;
     box-shadow: 0px 0px 10px 3px #f9da49; */
     margin-top: -520px;
@@ -828,7 +778,7 @@ body {
 .raiting__box {
   border: 2px solid #fff;
   background-color: #ffffff;
-  border-radius: 50px;
+  border-radius: 8px;
   max-width: 1199px;
   height: 380px;
   margin-bottom: 50px;
@@ -842,8 +792,8 @@ body {
 @media screen and (min-width: 768px) {
   .raiting__box {
     border: 2px solid #fff;
-    background-color: #804cb9;
-    border-radius: 50px;
+    /*   background-color: #804cb9; */
+    border-radius: 6px;
     max-width: 1199px;
     height: 205px;
     margin-bottom: 50px;
@@ -852,35 +802,15 @@ body {
     -webkit-box-shadow: 0px 0px 10px 3px #F9F9F9;
     box-shadow: 0px 0px 10px 3px #F9F9F9;
     align-items: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .raiting__box {
-    border: 2px solid #fff;
-    background-color: #804cb9;
-    border-radius: 50px;
-    max-width: 1199px;
-    height: 205px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-    -webkit-box-shadow: 0px 0px 10px 3px #F9F9F9;
-    box-shadow: 0px 0px 10px 3px #F9F9F9;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .raiting__box {
     width: 768px;
     margin-bottom: 75px;
-    flex-direction: row;
   }
 }
 @media screen and (min-width: 1200px) {
   .raiting__box {
-    width: 1025px;
+    width: 965px;
     flex-direction: row;
-    height: 170px;
+    height: 160px;
   }
 }
 
@@ -947,19 +877,19 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    box-shadow: inset -3px 0 0 #804cb9;
+    /* box-shadow: inset -3px 0 0 #804cb9; */
     background-color: #fff;
   }
 }
 @media screen and (min-width: 1200px) {
   .raiting__box-1 {
     border-radius: 44px 0 0 44px;
-    height: 170px;
+    height: 150px;
     width: 500px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    box-shadow: inset -3px 0 0 #804cb9;
+    /* box-shadow: inset -3px 0 0 #804cb9; */
     background-color: #fff;
   }
 }
@@ -1154,7 +1084,7 @@ body {
   font-family: Fredoka One;
   color: #2e3337;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.7;
   text-align: center;
   margin-left: 111px;
   margin-right: 100px;
@@ -1175,14 +1105,13 @@ body {
   .title__hero-margin {
     font-size: 22px;
     font-family: Fredoka One;
-    color: #fff;
     text-transform: uppercase;
-    line-height: 1.2;
+    line-height: 1.4;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 36px;
-    margin-top: 0px;
-    width: 212px;
+    margin-left: -64px;
+    margin-right: 50px;
+    margin-top: 12px;
+    width: 290px;
   }
 }
 
