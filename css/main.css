@@ -346,12 +346,12 @@ body {
 .button__hero {
   border: none;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 12px;
   background-image: linear-gradient(to right, #5265ce 0%, #360033 51%, #5265ce 100%);
   background-size: 200% auto;
-  box-shadow: -1px 1px 26px -2px rgba(0, 0, 0, 0.79);
-  -webkit-box-shadow: -1px 1px 26px -2px rgba(0, 0, 0, 0.79);
-  -moz-box-shadow: -1px 1px 26px -2px rgba(0, 0, 0, 0.79);
+  /* box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
+  -webkit-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
+  -moz-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79); */
   font-size: 23px;
   font-family: Fredoka One;
   color: rgb(255, 255, 255);
@@ -371,6 +371,7 @@ body {
    webkit-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
    -moz-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
    box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63); */
+  box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5), 0 0.25rem 0.6rem 0 rgb(87, 63, 234) inset;
 }
 @media screen and (min-width: 768px) {
   .button__hero {
@@ -666,7 +667,7 @@ body {
   margin: 0px auto;
   height: 130px;
   border-radius: 0 0 50% 50%/0 0 30px 30px;
-  width: 296px;
+  width: 290px;
 }
 @media screen and (min-width: 768px) {
   .hero__slots {
@@ -826,7 +827,7 @@ body {
 
 .raiting__box {
   border: 2px solid #fff;
-  background-color: #804cb9;
+  background-color: #ffffff;
   border-radius: 50px;
   max-width: 1199px;
   height: 380px;
@@ -836,7 +837,7 @@ body {
   -webkit-box-shadow: 0px 0px 10px 3px #F9F9F9;
   box-shadow: 0px 0px 10px 3px #F9F9F9;
   align-items: center;
-  width: 390px;
+  width: 375px;
 }
 @media screen and (min-width: 768px) {
   .raiting__box {
@@ -936,6 +937,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 35%;
 }
 @media screen and (min-width: 768px) {
   .raiting__box-1 {
@@ -1117,7 +1119,7 @@ body {
 }
 
 .raiting__content {
-  background-color: #804cb9;
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1130,7 +1132,6 @@ body {
 @media screen and (min-width: 768px) {
   .raiting__content {
     border-radius: 50px;
-    background-color: #804cb9;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1140,7 +1141,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .raiting__content {
-    background-color: #804cb9;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1152,19 +1152,18 @@ body {
 .title__hero-margin {
   font-size: 20px;
   font-family: Fredoka One;
-  color: #fff;
+  color: #2e3337;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
   margin-left: 111px;
   margin-right: 100px;
-  margin-top: 11px;
-  margin-bottom: 10px;
+  /* margin-top: 11px; */
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .title__hero-margin {
     font-family: Fredoka One;
-    color: #fff;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;

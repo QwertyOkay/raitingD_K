@@ -1,12 +1,12 @@
 .button__hero {
   border: none;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 12px;
     background-image: linear-gradient(to right, #5265ce 0%, #360033  51%, #5265ce  100%);
     background-size: 200% auto;
-    box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
+    /* box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
 -webkit-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
--moz-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
+-moz-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79); */
     font-size: 23px;
     font-family: Fredoka One;
     color: rgb(255, 255, 255);
@@ -30,6 +30,11 @@
     webkit-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
     -moz-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
     box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63); */
+
+    box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5),
+        /* 0 -0.25rem 1.5rem rgb(174, 2, 228) inset, */
+        /* 0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset, */
+        0 0.25rem 0.6rem 0 rgb(87, 63, 234) inset;
 
   @media screen and (min-width: 768px) {
       border: none;
