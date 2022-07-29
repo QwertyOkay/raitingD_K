@@ -347,9 +347,12 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 20px;
-  background-color: #78be20;
-  box-shadow: inset 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
-  font-size: 26.285px;
+  background-image: linear-gradient(to right, #5265ce 0%, #360033 51%, #5265ce 100%);
+  background-size: 200% auto;
+  box-shadow: -1px 1px 26px -2px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: -1px 1px 26px -2px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: -1px 1px 26px -2px rgba(0, 0, 0, 0.79);
+  font-size: 23px;
   font-family: Fredoka One;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -359,9 +362,15 @@ body {
   transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   width: 210px;
   height: 60px;
-  border-color: rgb(109, 140, 24);
-  border-radius: 20px;
-  box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5), 0 -0.25rem 1.5rem rgb(50, 93, 48) inset, 0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset, 0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
+  margin-bottom: 20px;
+  /* border-color: rgb(109, 140, 24); */
+  /* box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5),
+       0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
+       0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
+       0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
+   webkit-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
+   -moz-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
+   box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63); */
 }
 @media screen and (min-width: 768px) {
   .button__hero {
@@ -451,6 +460,26 @@ body {
 .hvr-grow:focus,
 .hvr-grow:active {
   transform: scale(1.1);
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #360033 0%, #0b8793 51%, #360033 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .icon__raiting {
@@ -690,12 +719,13 @@ body {
 }
 
 .title__hero {
-  font-size: 22px;
+  font-size: 20px;
   font-family: Fredoka One;
   color: #2e3337;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .title__hero {
@@ -722,11 +752,11 @@ body {
 
 .hero__box {
   background-color: #fff;
-  border-radius: 0 0 15% 15%;
+  border-radius: 0 0 3% 3%;
   /* border: 4px solid #d8b367;
   border-style: solid;
   border-width: 2px; */
-  border-radius: 20px;
+  /* border-radius: 20px; */
   /* -webkit-box-shadow: 0px 0px 10px 3px #f9da49;
     box-shadow: 0px 0px 10px 3px #f9da49; */
   margin-top: -760px;

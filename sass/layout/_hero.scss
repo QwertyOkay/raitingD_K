@@ -113,12 +113,13 @@
     }
 
     .title__hero {
-      font-size: 22px;
+      font-size: 20px;
         font-family: Fredoka One;
         color: #2e3337;
         text-transform: uppercase;
         line-height: 1.2;
         text-align: center;
+        margin-bottom: 30px;
       @media screen and (min-width: 768px) {
         font-size: 22px;
           font-family: Fredoka One;
@@ -141,11 +142,11 @@
 
       .hero__box {
       background-color: #fff;
-        border-radius: 0 0 15% 15%;
+      border-radius: 0 0 3% 3%;
         /* border: 4px solid #d8b367;
         border-style: solid;
         border-width: 2px; */
-        border-radius: 20px;
+        /* border-radius: 20px; */
         /* -webkit-box-shadow: 0px 0px 10px 3px #f9da49;
           box-shadow: 0px 0px 10px 3px #f9da49; */
         margin-top: -760px;
