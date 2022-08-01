@@ -18,10 +18,14 @@ Use a better box model (opinionated).
 3. Use a more readable tab size (opinionated).
 */
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-tab-size: 4; /* 3 */
-  tab-size: 4; /* 3 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
 }
 
 /*
@@ -33,8 +37,10 @@ Sections
 2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  margin: 0; /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+  margin: 0;
+  /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* 2 */
 }
 
 /*
@@ -46,8 +52,10 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
 }
 
 /*
@@ -77,8 +85,10 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
@@ -116,8 +126,10 @@ Tabular data
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
 }
 
 /*
@@ -133,10 +145,14 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
@@ -151,9 +167,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -206,9 +222,11 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
@@ -223,8 +241,10 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /*
@@ -309,26 +329,31 @@ body {
   min-width: 200px;
   margin: 0 auto;
 }
+
 .hero .container {
   max-width: 360px;
   padding: 0;
   text-align: center;
 }
+
 @media screen and (min-width: 1200px) {
   .hero .container {
     max-width: 696px;
   }
 }
+
 @media screen and (min-width: 480px) {
   .container {
     width: 390px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -339,6 +364,7 @@ body {
   /* max-width: 1920px; */
   padding: 60px 0;
 }
+
 .section.hero {
   padding: 0;
 }
@@ -350,29 +376,30 @@ body {
   background-image: linear-gradient(to right, #1f59ff 10%, #9500d0 51%, #1f59ff 100%);
   background-size: 200% auto;
   /* box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
-  -webkit-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
-  -moz-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79); */
+-webkit-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
+-moz-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79); */
   font-size: 23px;
   font-family: Fredoka One;
-  color: rgb(255, 255, 255);
+  color: white;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
   text-shadow: 0px 3px 0.99px rgba(0, 0, 0, 0.49);
-  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  transition: color .3s ease, background-color .3s ease, border-color .3s ease;
   width: 210px;
   height: 60px;
   margin-bottom: 20px;
   /* border-color: rgb(109, 140, 24); */
   /* box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5),
-       0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
-       0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
-       0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
-   webkit-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
-   -moz-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
-   box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63); */
-  box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5), 0 -0.25rem 1rem rgb(174, 2, 228) inset, 0 0.75rem 0.5rem rgba(31, 36, 31, 0.4) inset, 0 0.25rem 0.6rem 0 rgb(87, 63, 234) inset;
+        0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
+        0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
+        0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
+    webkit-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
+    box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63); */
+  box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5), 0 -0.25rem 1rem #ae02e4 inset, 0 0.75rem 0.5rem rgba(31, 36, 31, 0.4) inset, 0 0.25rem 0.6rem 0 #573fea inset;
 }
+
 @media screen and (min-width: 1200px) {
   .button__hero {
     border: none;
@@ -380,17 +407,18 @@ body {
     border-radius: 20px;
     font-size: 26.285px;
     font-family: Fredoka One;
-    color: rgb(255, 255, 255);
+    color: white;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
     text-shadow: 0px 3px 0.99px rgba(0, 0, 0, 0.49);
-    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    transition: color .3s ease, background-color .3s ease, border-color .3s ease;
     width: 240px;
     height: 60px;
     border-radius: 20px;
   }
 }
+
 @media screen and (min-width: 1900px) {
   .button__hero {
     border: none;
@@ -400,18 +428,19 @@ body {
     box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
     font-size: 26.285px;
     font-family: Fredoka One;
-    color: rgb(255, 255, 255);
+    color: white;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
     text-shadow: 0px 3px 0.99px rgba(0, 0, 0, 0.49);
     width: 266px;
     height: 60px;
-    border-color: rgb(109, 140, 24);
+    border-color: #6d8c18;
     border-radius: 20px;
-    box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5), 0 -0.25rem 1.5rem rgb(50, 93, 48) inset, 0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset, 0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
+    box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5), 0 -0.25rem 1.5rem #325d30 inset, 0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset, 0 0.25rem 0.5rem 0 #53f35b inset;
   }
 }
+
 .button__hero:hover {
   transform: perspective(1px) translateZ(0);
 }
@@ -451,7 +480,8 @@ body {
 }
 
 .btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
+  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
@@ -467,6 +497,7 @@ body {
   margin: 0px auto;
   /* padding: 8px 5px; */
 }
+
 @media screen and (min-width: 768px) {
   .icon__footer-age {
     width: 55px;
@@ -475,6 +506,7 @@ body {
     padding: 0px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .icon__footer-age {
     width: 55px;
@@ -483,6 +515,7 @@ body {
     padding: 0px;
   }
 }
+
 @media screen and (min-width: 1900px) {
   .icon__footer-age {
     width: 55px;
@@ -499,6 +532,7 @@ body {
   height: 887px;
   max-width: 100vw;
 }
+
 @media screen and (min-width: 480px) {
   .header {
     max-width: 100vw;
@@ -506,11 +540,13 @@ body {
     background-repeat: no-repeat;
   }
 }
+
 @media screen and (min-width: 768px) {
   .header {
     max-width: 100vw;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .header {
     max-width: 100vw;
@@ -519,6 +555,7 @@ body {
     height: 100%;
   }
 }
+
 @media screen and (min-width: 1600px) {
   .header {
     max-width: 100vw;
@@ -536,31 +573,34 @@ body {
   font-size: 28px;
   font-family: "Fredoka One";
   font-weight: 600;
-  color: rgb(255, 255, 255);
+  color: white;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px, 0 0 10px #4c2781, 0 0 20px #4c2284, 0 0 30px #5b2e8d, 0 0 40px rgba(205, 171, 224, 0.5098039216);
+  text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97998px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.5136px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px, 0 0 10px #4c2781, 0 0 20px #4c2284, 0 0 30px #5b2e8d, 0 0 40px #cdabe082;
 }
+
 @media screen and (min-width: 768px) {
   .header__title {
     margin-top: 50px;
     font-size: 35px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .header__title {
     margin-top: 45px;
     font-size: 42px;
     font-family: "Fredoka One";
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    color: white;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
-    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px, 0 0 10px #4c2781, 0 0 20px #4c2284, 0 0 30px #5b2e8d, 0 0 40px rgba(205, 171, 224, 0.5098039216);
+    text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97998px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.5136px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px, 0 0 10px #4c2781, 0 0 20px #4c2284, 0 0 30px #5b2e8d, 0 0 40px #cdabe082;
   }
 }
+
 @media screen and (min-width: 1600px) {
   .header__title {
     font-size: 42px;
@@ -577,12 +617,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 @media screen and (min-width: 768px) {
   .hero {
     width: 100%;
     max-width: 100vw;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 100vw;
@@ -607,6 +649,7 @@ body {
   top: -972px;
   margin-left: 33px;
 }
+
 @media screen and (min-width: 768px) {
   .hero__slotsstar {
     height: 260px;
@@ -615,6 +658,7 @@ body {
     margin-left: 30px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hero__slotsstar {
     position: absolute;
@@ -624,6 +668,7 @@ body {
     margin-left: 39px;
   }
 }
+
 @media screen and (min-width: 1600px) {
   .hero__slotsstar {
     position: absolute;
@@ -635,13 +680,15 @@ body {
 }
 
 .hero__slots {
-  padding-top: 49px;
+  padding-top: 62px;
   background-color: #fff;
   margin: 0px auto;
   height: 130px;
-  border-radius: 0 0 50% 50%/0 0 30px 30px;
+  border-radius: 0 0 50% 50% / 0 0 30px 30px;
   width: 290px;
+  margin-bottom: 30px;
 }
+
 @media screen and (min-width: 768px) {
   .hero__slots {
     padding-top: 64px;
@@ -649,32 +696,58 @@ body {
     margin: 0px auto;
     height: 145px;
     width: 460px;
-    border-radius: 0 0 50% 50%/0 0 30px 30px;
+    border-radius: 0 0 50% 50% / 0 0 30px 30px;
     width: 295px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hero__slots {
-    padding-top: 115px;
+    padding-top: 130px;
     background-color: #fff;
     margin: 0px auto;
     height: 215px;
     width: 320px;
-    border-radius: 0 0 50% 50%/0 0 30px 30px;
+    border-radius: 0 0 50% 50% / 0 0 30px 30px;
   }
 }
 
 .hero__logo {
   display: block;
   margin: 0 auto;
-  width: 190px;
-  height: 64px;
+  width: 187px;
+  height: 62px;
 }
+
 @media screen and (min-width: 1200px) {
   .hero__logo {
     width: 188px;
     height: 67px;
   }
+}
+
+.hero__logo9 {
+  display: block;
+  margin: 0 auto;
+  width: 192px;
+  height: 55px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__logo9 {
+    width: 193px;
+    height: 55px;
+    margin-bottom: -3px;
+  }
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+  filter: blur(0);
+  transform: scale(1);
 }
 
 .hero__5stars {
@@ -683,6 +756,7 @@ body {
   width: 132px;
   height: 42px;
 }
+
 @media screen and (min-width: 1200px) {
   .hero__5stars {
     display: block;
@@ -701,6 +775,7 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
+
 @media screen and (min-width: 1200px) {
   .title__hero {
     font-size: 22px;
@@ -708,6 +783,7 @@ body {
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
+    margin-bottom: 35px;
   }
 }
 
@@ -719,28 +795,30 @@ body {
   background-color: #fff;
   border-radius: 0 0 3% 3%;
   /* border: 4px solid #d8b367;
-  border-style: solid;
-  border-width: 2px; */
+        border-style: solid;
+        border-width: 2px; */
   /* border-radius: 20px; */
   /* -webkit-box-shadow: 0px 0px 10px 3px #f9da49;
-    box-shadow: 0px 0px 10px 3px #f9da49; */
+          box-shadow: 0px 0px 10px 3px #f9da49; */
   margin-top: -760px;
   margin-left: 3px;
 }
+
 @media screen and (min-width: 1200px) {
   .hero__box {
     /* background-color: #804cb9;
-      border-radius: 0 0 15% 15%;
-      border: 4px solid #d8b367;
-      border-style: solid;
-      border-width: 2px;
-      border-radius: 20px; */
+              border-radius: 0 0 15% 15%;
+              border: 4px solid #d8b367;
+              border-style: solid;
+              border-width: 2px;
+              border-radius: 20px; */
     /* -webkit-box-shadow: 0px 0px 10px 3px #f9da49;
-    box-shadow: 0px 0px 10px 3px #f9da49; */
+            box-shadow: 0px 0px 10px 3px #f9da49; */
     margin-top: -520px;
     margin-left: 9px;
   }
 }
+
 @media screen and (min-width: 1600px) {
   .hero__box {
     margin-top: -450px;
@@ -751,9 +829,20 @@ body {
   margin-bottom: 5%;
 }
 
+.margin {
+  margin-right: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .margin {
+    margin-right: 30px;
+  }
+}
+
 .raiting__list {
   list-style: none;
 }
+
 @media screen and (min-width: 768px) {
   .raiting__list {
     display: flex;
@@ -761,6 +850,7 @@ body {
     flex-direction: column;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .raiting__list {
     display: flex;
@@ -769,6 +859,7 @@ body {
     align-content: space-around;
   }
 }
+
 @media screen and (min-width: 1600px) {
   .raiting__list {
     margin-bottom: -70px;
@@ -789,6 +880,7 @@ body {
   align-items: center;
   width: 375px;
 }
+
 @media screen and (min-width: 768px) {
   .raiting__box {
     border: 2px solid #fff;
@@ -802,13 +894,16 @@ body {
     -webkit-box-shadow: 0px 0px 10px 3px #F9F9F9;
     box-shadow: 0px 0px 10px 3px #F9F9F9;
     align-items: center;
-    width: 768px;
+    width: 660px;
     margin-bottom: 75px;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .raiting__box {
-    width: 965px;
+    width: 911px;
     flex-direction: row;
     height: 160px;
   }
@@ -818,13 +913,14 @@ body {
   margin-top: -545px;
   background-repeat: repeat;
   background-size: cover;
-  background-size: 100% auto;
-  background-image: url(../images/Background2.png);
+  background-size: 100% 100%;
+  background-image: url(../images/Background-mob.png);
   background-position: center center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 @media screen and (min-width: 768px) {
   .raiting {
     margin-top: -460px;
@@ -835,6 +931,7 @@ body {
     background-position: center center;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .raiting {
     margin-top: -6px;
@@ -844,6 +941,7 @@ body {
     background-image: url(../images/Background2.png);
   }
 }
+
 @media screen and (min-width: 1600px) {
   .raiting {
     /* height: 1484px; */
@@ -869,6 +967,7 @@ body {
   align-items: center;
   height: 35%;
 }
+
 @media screen and (min-width: 768px) {
   .raiting__box-1 {
     border-radius: 44px 0 0 44px;
@@ -881,6 +980,7 @@ body {
     background-color: #fff;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .raiting__box-1 {
     border-radius: 44px 0 0 44px;
@@ -902,34 +1002,37 @@ body {
   align-items: center;
   background-color: #fff;
 }
+
 @media screen and (min-width: 768px) {
   .raiting__stars-box {
     display: flex;
     height: 203px;
     width: 300px;
-    border-radius: 0 15% 15% 0/0 100px 100px 0px;
+    border-radius: 0 15% 15% 0 / 0 100px 100px 0px;
     justify-content: center;
     align-items: center;
     background-color: #fff;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .raiting__stars-box {
     display: flex;
     height: 168px;
     width: 300px;
-    border-radius: 0 15% 15% 0/0 100px 100px 0px;
+    border-radius: 0 15% 15% 0 / 0 100px 100px 0px;
     justify-content: center;
     align-items: center;
     background-color: #fff;
   }
 }
+
 @media screen and (min-width: 1900px) {
   .raiting__stars-box {
     display: flex;
     height: 166px;
     width: 350px;
-    border-radius: 0 15% 15% 0/0 100px 100px 0px;
+    border-radius: 0 15% 15% 0 / 0 100px 100px 0px;
     justify-content: center;
     align-items: center;
     background-color: #fff;
@@ -965,6 +1068,7 @@ body {
     text-shadow: 0px 2px 0.99px rgba(0, 0, 0, 0.38);
   }
 }
+
 @media screen and (min-width: 768px) {
   .raiting__text {
     font-size: 23px;
@@ -976,6 +1080,7 @@ body {
     text-shadow: 0px 2px 0.99px rgba(0, 0, 0, 0.38);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .raiting__text {
     font-size: 26px;
@@ -987,6 +1092,7 @@ body {
     text-shadow: 0px 2px 0.99px rgba(0, 0, 0, 0.38);
   }
 }
+
 @media screen and (min-width: 1900px) {
   .raiting__text {
     font-size: 32px;
@@ -1011,6 +1117,7 @@ body {
     margin-left: 6%;
   }
 }
+
 @media screen and (min-width: 768px) {
   .raiting__number {
     font-size: 23px;
@@ -1023,6 +1130,7 @@ body {
     margin-left: 6%;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .raiting__number {
     font-size: 27px;
@@ -1035,6 +1143,7 @@ body {
     margin-left: 6%;
   }
 }
+
 @media screen and (min-width: 1900px) {
   .raiting__number {
     font-size: 32px;
@@ -1059,6 +1168,7 @@ body {
   width: -webkit-fill-available;
   margin-top: 12px;
 }
+
 @media screen and (min-width: 768px) {
   .raiting__content {
     border-radius: 50px;
@@ -1069,13 +1179,14 @@ body {
     justify-content: center;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .raiting__content {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
@@ -1091,6 +1202,7 @@ body {
   /* margin-top: 11px; */
   margin-bottom: 30px;
 }
+
 @media screen and (min-width: 768px) {
   .title__hero-margin {
     font-family: Fredoka One;
@@ -1098,9 +1210,10 @@ body {
     line-height: 1.2;
     text-align: center;
     margin-left: 50px;
-    margin-right: 100px;
+    margin-right: 65px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .title__hero-margin {
     font-size: 22px;
@@ -1108,7 +1221,7 @@ body {
     text-transform: uppercase;
     line-height: 1.4;
     text-align: center;
-    margin-left: -64px;
+    margin-left: -23px;
     margin-right: 50px;
     margin-top: 12px;
     width: 290px;
@@ -1120,6 +1233,7 @@ body {
   padding: 22px 0;
   height: 250px;
 }
+
 @media screen and (min-width: 768px) {
   .footer {
     background: #1a0a25;
@@ -1131,6 +1245,7 @@ body {
 .footer__container {
   text-align: center;
 }
+
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
@@ -1144,12 +1259,14 @@ body {
   display: block;
   margin-bottom: 30px;
 }
+
 @media screen and (min-width: 768px) {
   .footer__content {
     margin-bottom: 0;
     display: flex;
   }
 }
+
 .footer__text {
   display: flex;
   flex-direction: column;
@@ -1163,6 +1280,7 @@ body {
 .footer-tablet {
   margin-bottom: 60px;
 }
+
 @media screen and (min-width: 768px) {
   .footer-tablet {
     display: flex;
@@ -1171,6 +1289,7 @@ body {
     margin-top: -15px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .footer-tablet {
     margin-bottom: 0;
@@ -1181,18 +1300,19 @@ body {
 .footer__texts {
   font-size: 12px;
   font-family: Fredoka One;
-  color: rgb(255, 255, 255);
+  color: white;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 15px;
   margin-top: 5%;
 }
+
 @media screen and (min-width: 768px) {
   .footer__texts {
     font-size: 14px;
     font-family: Fredoka One;
-    color: rgb(255, 255, 255);
+    color: white;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
@@ -1200,11 +1320,12 @@ body {
     margin-top: 0px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .footer__texts {
     font-size: 14px;
     font-family: Fredoka One;
-    color: rgb(255, 255, 255);
+    color: white;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
@@ -1212,11 +1333,12 @@ body {
     margin-top: 0px;
   }
 }
+
 @media screen and (min-width: 1900px) {
   .footer__texts {
     font-size: 14px;
     font-family: Fredoka One;
-    color: rgb(255, 255, 255);
+    color: white;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
@@ -1229,10 +1351,10 @@ body {
   justify-content: space-around;
   font-size: 20px;
   text-decoration: underline;
-  text-decoration-color: #f9da49;
+  text-decoration-color: #4461fa;
   text-underline-position: unset;
   font-family: Fredoka One;
-  color: rgb(255, 255, 255);
+  color: white;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
@@ -1241,6 +1363,7 @@ body {
 .footer__thumb {
   margin-right: auto;
 }
+
 @media screen and (min-width: 768px) {
   .footer__thumb {
     margin-right: 0;
@@ -1250,6 +1373,7 @@ body {
     margin-left: 78px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .footer__thumb {
     margin-right: 0;
@@ -1259,6 +1383,7 @@ body {
     margin-left: 180px;
   }
 }
+
 @media screen and (min-width: 1900px) {
   .footer__thumb {
     margin-right: 0;
@@ -1272,12 +1397,13 @@ body {
 .footer__thumb--mail {
   font-size: 14px;
   font-family: Fredoka One;
-  color: rgb(255, 255, 255);
+  color: white;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 15px;
 }
+
 @media screen and (min-width: 768px) {
   .footer__thumb--mail {
     margin-right: 0;
@@ -1292,14 +1418,15 @@ body {
 .footer__thumb--contact {
   font-size: 20px;
   text-decoration: underline;
-  text-decoration-color: #f9da49;
+  text-decoration-color: #4461fa;
   text-underline-position: unset;
   text-transform: uppercase;
   font-family: Fredoka One;
-  color: rgb(255, 255, 255);
+  color: white;
   line-height: 1.2;
   text-align: center;
 }
+
 @media screen and (min-width: 768px) {
   .footer__thumb--contact {
     margin-right: 0;
@@ -1308,4 +1435,5 @@ body {
     justify-content: center;
     margin-left: 80px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

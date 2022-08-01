@@ -61,12 +61,13 @@
 }
 
     .hero__slots {
-      padding-top: 49px;
+      padding-top: 62px;
         background-color: #fff;
         margin: 0px auto;
         height: 130px;
         border-radius: 0 0 50% 50% / 0 0 30px 30px;
         width: 290px;
+        margin-bottom: 30px;
 
       @media screen and (min-width: 768px) {
         padding-top: 64px;
@@ -79,7 +80,7 @@
       }
 
       @media screen and (min-width: 1200px) {
-      padding-top: 115px;
+      padding-top: 130px;
       background-color: #fff;
       margin: 0px auto;
       height: 215px;
@@ -91,13 +92,35 @@
     .hero__logo {
       display: block;
       margin: 0 auto;
-              width: 190px;
-                height: 64px;
+              width: 187px;
+    height: 62px;
       @media screen and (min-width: 1200px) {
       width: 188px;
         height: 67px;
       }
     }
+
+    .hero__logo9 {
+      display: block;
+      margin: 0 auto;
+              width: 192px;
+    height: 55px;
+      @media screen and (min-width: 1200px) {
+      width: 193px;
+    height: 55px;
+        margin-bottom: -3px;
+      }
+    }
+
+    .img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+  // transform: perspective(1px) translateZ(0);
+  filter: blur(0);
+  transform: scale(1);
+}
 
     .hero__5stars {
       display: block;
@@ -127,6 +150,7 @@
         text-transform: uppercase;
         line-height: 1.2;
         text-align: center;
+            margin-bottom: 35px;
       }
     }
   
@@ -171,3 +195,11 @@
       // .hero__item-margin {
       //   margin-bottom: 10%;
       // }
+
+      .margin {
+        margin-right: 0px;
+        @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+        }
+      
+      }
