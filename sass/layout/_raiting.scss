@@ -126,7 +126,7 @@
     @media screen and (min-width: 1200px) {
     border-radius: 44px 0 0 44px;
   height: 150px;
-  width: 500px;
+  width: 454px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -299,7 +299,7 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     }
   }
            
@@ -324,14 +324,13 @@
         margin-left: 50px;
         margin-right: 65px;
     }
-
     @media screen and (min-width: 1200px) {
-    font-size: 22px;
+    font-size: 20px;
       font-family: Fredoka One;
       text-transform: uppercase;
       line-height: 1.4;
       text-align: center;
-      margin-left: -23px;
+          margin-left: 6px;
       margin-right: 50px;
       margin-top: 12px;
       width: 290px;

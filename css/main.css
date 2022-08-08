@@ -487,8 +487,9 @@ body {
 }
 
 .icon__raiting {
-  width: 260px;
-  height: 65px;
+  width: 150px;
+  /* height: 65px; */
+  margin: 0px auto;
 }
 
 .icon__footer-age {
@@ -680,7 +681,7 @@ body {
 }
 
 .hero__slots {
-  padding-top: 62px;
+  padding-top: 20px;
   background-color: #fff;
   margin: 0px auto;
   height: 130px;
@@ -703,7 +704,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero__slots {
-    padding-top: 130px;
+    padding-top: 90px;
     background-color: #fff;
     margin: 0px auto;
     height: 215px;
@@ -715,14 +716,12 @@ body {
 .hero__logo {
   display: block;
   margin: 0 auto;
-  width: 187px;
-  height: 62px;
+  width: 150px;
 }
 
 @media screen and (min-width: 1200px) {
   .hero__logo {
-    width: 188px;
-    height: 67px;
+    width: 150px;
   }
 }
 
@@ -767,7 +766,7 @@ body {
 }
 
 .title__hero {
-  font-size: 20px;
+  font-size: 18px;
   font-family: Fredoka One;
   color: #313841;
   text-transform: uppercase;
@@ -778,12 +777,13 @@ body {
 
 @media screen and (min-width: 1200px) {
   .title__hero {
-    font-size: 22px;
+    font-size: 20px;
     font-family: Fredoka One;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
     margin-bottom: 35px;
+    margin-top: 30px;
   }
 }
 
@@ -985,7 +985,7 @@ body {
   .raiting__box-1 {
     border-radius: 44px 0 0 44px;
     height: 150px;
-    width: 500px;
+    width: 454px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1186,7 +1186,7 @@ body {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -1216,12 +1216,12 @@ body {
 
 @media screen and (min-width: 1200px) {
   .title__hero-margin {
-    font-size: 22px;
+    font-size: 20px;
     font-family: Fredoka One;
     text-transform: uppercase;
     line-height: 1.4;
     text-align: center;
-    margin-left: -23px;
+    margin-left: 6px;
     margin-right: 50px;
     margin-top: 12px;
     width: 290px;
