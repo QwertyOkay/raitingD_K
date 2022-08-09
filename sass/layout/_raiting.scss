@@ -28,6 +28,7 @@
       height: 380px;
       margin-bottom: 50px;
       display: flex;
+      justify-content: center;
       flex-direction: column;
       -webkit-box-shadow: 0px 0px 10px 3px #F9F9F9;
       box-shadow: 0px 0px 10px 3px #F9F9F9;
@@ -311,8 +312,8 @@
       text-transform: uppercase;
       line-height: 1.7;
       text-align: center;
-      margin-left: 111px;
-      margin-right: 100px;
+      // margin-left: 111px;
+      // margin-right: 100px;
       /* margin-top: 11px; */
         margin-bottom: 30px;
     @media screen and (min-width: 768px) {
