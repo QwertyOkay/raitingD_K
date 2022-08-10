@@ -1,12 +1,10 @@
 (() => {
     const refs = {
-      openModalBtn: document.querySelector('[data-modal-open]'),
       openModalBtn2: document.querySelector('[data-modal-open2]'),
       openModalBtn3: document.querySelector('[data-modal-open3]'),
       openModalBtn4: document.querySelector('[data-modal-open4]'),
       openModalBtn5: document.querySelector('[data-modal-open5]'),
-      
-      closeModalBtn: document.querySelector('[data-modal-close]'),
+
       closeModalBtn2: document.querySelector('[data-modal-close2]'),
        closeModalBtn3: document.querySelector('[data-modal-close3]'),
        closeModalBtn4: document.querySelector('[data-modal-close4]'),
@@ -18,9 +16,6 @@
       modal4: document.querySelector('[data-modal4]'),
       modal5: document.querySelector('[data-modal5]'),
     };
-  
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
 
   refs.openModalBtn2.addEventListener('click', toggleModal2);
   refs.closeModalBtn2.addEventListener('click', toggleModal2);
@@ -33,10 +28,7 @@
 
   refs.openModalBtn5.addEventListener('click', toggleModal5);
   refs.closeModalBtn5.addEventListener('click', toggleModal5);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle('is-hidden');
-  }
+
   
      function toggleModal2() {
        refs.modal2.classList.toggle('is-hidden2');
