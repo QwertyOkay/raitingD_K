@@ -1428,7 +1428,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero__slots {
-    padding-top: 32px;
+    padding-top: 64px;
     background-color: #fff;
     margin: 0px auto;
     height: 145px;
