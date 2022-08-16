@@ -1,108 +1,43 @@
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-/*
-Document
-========
-*/
-/**
-Use a better box model (opinionated).
-*/
-*,
-::before,
-::after {
+*, ::before, ::after {
   box-sizing: border-box;
 }
 
-/**
-1. Correct the line height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size (opinionated).
-*/
 html {
   line-height: 1.15;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
   -moz-tab-size: 4;
-  /* 3 */
   tab-size: 4;
-  /* 3 */
 }
 
-/*
-Sections
-========
-*/
-/**
-1. Remove the margin in all browsers.
-2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
 body {
   margin: 0;
-  /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  /* 2 */
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 
-/*
-Grouping content
-================
-*/
-/**
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-*/
 hr {
   height: 0;
-  /* 1 */
   color: inherit;
-  /* 2 */
 }
 
-/*
-Text-level semantics
-====================
-*/
-/**
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
 abbr[title] {
   text-decoration: underline dotted;
 }
 
-/**
-Add the correct font weight in Edge and Safari.
-*/
-b,
-strong {
+b, strong {
   font-weight: bolder;
 }
 
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
-*/
-code,
-kbd,
-samp,
-pre {
+code, kbd, samp, pre {
   font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
-  /* 1 */
   font-size: 1em;
-  /* 2 */
 }
 
-/**
-Add the correct font size in all browsers.
-*/
 small {
   font-size: 80%;
 }
 
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -117,143 +52,65 @@ sup {
   top: -0.5em;
 }
 
-/*
-Tabular data
-============
-*/
-/**
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-*/
 table {
   text-indent: 0;
-  /* 1 */
   border-color: inherit;
-  /* 2 */
 }
 
-/*
-Forms
-=====
-*/
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
   font-family: inherit;
-  /* 1 */
   font-size: 100%;
-  /* 1 */
   line-height: 1.15;
-  /* 1 */
   margin: 0;
-  /* 2 */
 }
 
-/**
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-button,
-select {
+button, select {
   text-transform: none;
 }
 
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+button, [type='button'], [type='reset'], [type='submit'] {
   -webkit-appearance: button;
 }
 
-/**
-Remove the inner border and padding in Firefox.
-*/
 ::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-/**
-Restore the focus styles unset by the previous rule.
-*/
 :-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-/**
-Remove the additional ':invalid' styles in Firefox.
-See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
-*/
 :-moz-ui-invalid {
   box-shadow: none;
 }
 
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
 legend {
   padding: 0;
 }
 
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
 progress {
   vertical-align: baseline;
 }
 
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
   height: auto;
 }
 
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
 [type='search'] {
   -webkit-appearance: textfield;
-  /* 1 */
   outline-offset: -2px;
-  /* 2 */
 }
 
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-  /* 1 */
   font: inherit;
-  /* 2 */
 }
 
-/*
-Interactive
-===========
-*/
-/*
-Add the correct display in Chrome and Safari.
-*/
 summary {
   display: list-item;
 }
@@ -265,7 +122,7 @@ summary {
   --first-text-color: #757575;
   --second-text-color: rgba(255, 255, 255, 0.6);
   --third-text-color: #000000;
-  --accent-color: #2196f3;
+  --accent-color: #4066ff;
   --btn-accent-color: #188ce8;
   --main-site-section: #2f303a;
   --thumb-background-color: #f5f4fa;
@@ -281,13 +138,7 @@ summary {
   --overlay-card-color: rgba(33, 150, 243, 0.9);
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -314,13 +165,13 @@ img {
 }
 
 body {
-  font-family: Fredoka One, sans-serif;
+  font-family: Fredoka One,sans-serif;
   color: #270a3a;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 body {
-  font-family: Fredoka One, sans-serif;
+  font-family: Fredoka One,sans-serif;
   color: #270a3a;
   background-color: #270a3a;
 }
@@ -361,7 +212,6 @@ body {
 }
 
 .section {
-  /* max-width: 1920px; */
   padding: 60px 0;
 }
 
@@ -375,12 +225,9 @@ body {
   border-radius: 12px;
   background-image: linear-gradient(to right, #1f59ff 10%, #9500d0 51%, #1f59ff 100%);
   background-size: 200% auto;
-  /* box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
--webkit-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79);
--moz-box-shadow: -1px 1px 26px -2px rgba(0,0,0,0.79); */
   font-size: 23px;
   font-family: Fredoka One;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
@@ -389,14 +236,6 @@ body {
   width: 210px;
   height: 60px;
   margin-bottom: 20px;
-  /* border-color: rgb(109, 140, 24); */
-  /* box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5),
-        0 -0.25rem 1.5rem rgb(50, 93, 48) inset,
-        0 0.75rem 0.5rem rgba(114, 133, 114, 0.4) inset,
-        0 0.25rem 0.5rem 0 rgb(83, 243, 91) inset;
-    webkit-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
-    -moz-box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63);
-    box-shadow: inset 10px 11px 84px -40px rgba(0, 0, 0, 0.63); */
   box-shadow: 0 1rem 1.25rem 0 rgba(0, 0, 0, 0.5), 0 -0.25rem 1rem #ae02e4 inset, 0 0.75rem 0.5rem rgba(31, 36, 31, 0.4) inset, 0 0.25rem 0.6rem 0 #573fea inset;
 }
 
@@ -407,7 +246,7 @@ body {
     border-radius: 20px;
     font-size: 26.285px;
     font-family: Fredoka One;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
@@ -428,7 +267,7 @@ body {
     box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
     font-size: 26.285px;
     font-family: Fredoka One;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
@@ -446,12 +285,11 @@ body {
 }
 
 .button__hero:focus {
-  color: #ffffff;
+  color: #fff;
 }
 
 .hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   transform: translateZ(0);
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
@@ -459,9 +297,7 @@ body {
   transition-property: transform;
 }
 
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   transform: scale(1.1);
 }
 
@@ -481,7 +317,6 @@ body {
 
 .btn-grad:hover {
   background-position: right center;
-  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
@@ -511,41 +346,22 @@ body {
 }
 
 .icon__raiting {
-  width: 150px;
-  /* height: 65px; */
+  width: 220px;
   margin: 0px auto;
 }
 
 .icon__footer-age {
-  width: 55px;
-  height: 55px;
+  width: 44px;
+  height: 44px;
   margin: 0px auto;
-  /* padding: 8px 5px; */
-}
-
-@media screen and (min-width: 768px) {
-  .icon__footer-age {
-    width: 55px;
-    height: 55px;
-    margin-right: 20px;
-    padding: 0px;
-  }
+  margin: 10px auto;
 }
 
 @media screen and (min-width: 1200px) {
   .icon__footer-age {
-    width: 55px;
-    height: 55px;
-    margin-right: 20px;
-    padding: 0px;
-  }
-}
-
-@media screen and (min-width: 1900px) {
-  .icon__footer-age {
-    width: 55px;
-    height: 55px;
-    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
     padding: 0px;
   }
 }
@@ -566,7 +382,6 @@ body {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* fill: currentColor; */
 }
 
 .icon__check {
@@ -740,8 +555,7 @@ body {
   border: 2px solid #2196f3;
 }
 
-.modal__thumb:last-of-type:hover > .modal__check,
-.modal__thumb:last-of-type:focus-within > .modal__check {
+.modal__thumb:last-of-type:hover > .modal__check, .modal__thumb:last-of-type:focus-within > .modal__check {
   border: 2px solid #2196f3;
 }
 
@@ -926,6 +740,7 @@ body {
   margin-bottom: 5px;
   text-transform: uppercase;
   color: brown;
+  display: block;
 }
 
 .modal__backdrop2 {
@@ -1241,7 +1056,7 @@ body {
   left: 0;
   overflow: auto;
   background-color: rgba(255, 255, 255, 0.9);
-  color: #ffffff;
+  color: #fff;
   padding: 20px 24px;
   font-weight: 400;
   font-size: 14px;
@@ -1310,11 +1125,11 @@ body {
   font-size: 28px;
   font-family: "Fredoka One";
   font-weight: 600;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97998px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.5136px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px, 0 0 10px #4c2781, 0 0 20px #4c2284, 0 0 30px #5b2e8d, 0 0 40px #cdabe082;
+  text-shadow: #000 2px 0px 0px,#000 1.75517px 0.95885px 0px,#000 1.0806px 1.68294px 0px,#000 0.14147px 1.99499px 0px,#000 -0.83229px 1.81859px 0px,#000 -1.60229px 1.19694px 0px,#000 -1.97998px 0.28224px 0px,#000 -1.87291px -0.70157px 0px,#000 -1.30729px -1.5136px 0px,#000 -0.42159px -1.95506px 0px,#000 0.56732px -1.91785px 0px,#000 1.41734px -1.41108px 0px,#000 1.92034px -0.55883px 0px,0 0 10px #4c2781,0 0 20px #4c2284,0 0 30px #5b2e8d,0 0 40px #cdabe082;
 }
 
 @media screen and (min-width: 768px) {
@@ -1330,11 +1145,11 @@ body {
     font-size: 42px;
     font-family: "Fredoka One";
     font-weight: 600;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
-    text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97998px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.5136px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px, 0 0 10px #4c2781, 0 0 20px #4c2284, 0 0 30px #5b2e8d, 0 0 40px #cdabe082;
+    text-shadow: #000 2px 0px 0px,#000 1.75517px 0.95885px 0px,#000 1.0806px 1.68294px 0px,#000 0.14147px 1.99499px 0px,#000 -0.83229px 1.81859px 0px,#000 -1.60229px 1.19694px 0px,#000 -1.97998px 0.28224px 0px,#000 -1.87291px -0.70157px 0px,#000 -1.30729px -1.5136px 0px,#000 -0.42159px -1.95506px 0px,#000 0.56732px -1.91785px 0px,#000 1.41734px -1.41108px 0px,#000 1.92034px -0.55883px 0px,0 0 10px #4c2781,0 0 20px #4c2284,0 0 30px #5b2e8d,0 0 40px #cdabe082;
   }
 }
 
@@ -1453,6 +1268,7 @@ body {
   display: block;
   margin: 0 auto;
   width: 150px;
+  padding: 20px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1472,7 +1288,7 @@ body {
   .hero__logo9 {
     width: 193px;
     height: 55px;
-    margin-bottom: -3px;
+    margin-bottom: 15px;
   }
 }
 
@@ -1509,6 +1325,7 @@ body {
   line-height: 1.7;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 39px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1530,26 +1347,12 @@ body {
 .hero__box {
   background-color: #fff;
   border-radius: 0 0 3% 3%;
-  /* border: 4px solid #d8b367;
-        border-style: solid;
-        border-width: 2px; */
-  /* border-radius: 20px; */
-  /* -webkit-box-shadow: 0px 0px 10px 3px #f9da49;
-          box-shadow: 0px 0px 10px 3px #f9da49; */
   margin-top: -760px;
   margin-left: 3px;
 }
 
 @media screen and (min-width: 1200px) {
   .hero__box {
-    /* background-color: #804cb9;
-              border-radius: 0 0 15% 15%;
-              border: 4px solid #d8b367;
-              border-style: solid;
-              border-width: 2px;
-              border-radius: 20px; */
-    /* -webkit-box-shadow: 0px 0px 10px 3px #f9da49;
-            box-shadow: 0px 0px 10px 3px #f9da49; */
     margin-top: -520px;
     margin-left: 9px;
   }
@@ -1621,7 +1424,6 @@ body {
 @media screen and (min-width: 768px) {
   .raiting__box {
     border: 2px solid #fff;
-    /*   background-color: #804cb9; */
     border-radius: 6px;
     max-width: 1199px;
     height: 205px;
@@ -1681,7 +1483,6 @@ body {
 
 @media screen and (min-width: 1600px) {
   .raiting {
-    /* height: 1484px; */
     margin-top: 43px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1713,7 +1514,6 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* box-shadow: inset -3px 0 0 #804cb9; */
     background-color: #fff;
   }
 }
@@ -1726,7 +1526,6 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* box-shadow: inset -3px 0 0 #804cb9; */
     background-color: #fff;
   }
 }
@@ -1934,7 +1733,6 @@ body {
   text-transform: uppercase;
   line-height: 1.7;
   text-align: center;
-  /* margin-top: 11px; */
   margin-bottom: 30px;
 }
 
@@ -1966,14 +1764,12 @@ body {
 .footer {
   background: #1a0a25;
   padding: 22px 0;
-  height: 250px;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     background: #1a0a25;
     padding: 60px 0;
-    height: 155px;
   }
 }
 
@@ -1990,18 +1786,6 @@ body {
   }
 }
 
-.footer__content {
-  display: block;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer__content {
-    margin-bottom: 0;
-    display: flex;
-  }
-}
-
 .footer__text {
   display: flex;
   flex-direction: column;
@@ -2012,30 +1796,10 @@ body {
   margin-top: 9px;
 }
 
-.footer-tablet {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-tablet {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 20px;
-    margin-top: -15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-tablet {
-    margin-bottom: 0;
-    justify-content: space-between;
-  }
-}
-
 .footer__texts {
   font-size: 12px;
   font-family: Fredoka One;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
@@ -2047,7 +1811,7 @@ body {
   .footer__texts {
     font-size: 14px;
     font-family: Fredoka One;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
@@ -2060,7 +1824,7 @@ body {
   .footer__texts {
     font-size: 14px;
     font-family: Fredoka One;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
@@ -2073,7 +1837,7 @@ body {
   .footer__texts {
     font-size: 14px;
     font-family: Fredoka One;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
@@ -2089,7 +1853,7 @@ body {
   text-decoration-color: #4461fa;
   text-underline-position: unset;
   font-family: Fredoka One;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
@@ -2132,7 +1896,7 @@ body {
 .footer__thumb--mail {
   font-size: 14px;
   font-family: Fredoka One;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
@@ -2157,7 +1921,7 @@ body {
   text-underline-position: unset;
   text-transform: uppercase;
   font-family: Fredoka One;
-  color: white;
+  color: #fff;
   line-height: 1.2;
   text-align: center;
 }
@@ -2169,6 +1933,471 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: 80px;
+  }
+}
+
+.tc-tooltip {
+  font-size: 10px;
+  text-decoration: underline;
+  display: block;
+  color: #000;
+  position: relative;
+}
+
+.desktop-tooltip {
+  display: none;
+}
+
+.tooltip-content {
+  display: none;
+  background: #fff;
+  padding: 10px;
+  position: absolute;
+  margin: 10px 0 0;
+  color: #313841;
+  z-index: 99;
+  font-size: 12px;
+  left: 0;
+  right: 0;
+}
+
+.tc-tooltip:hover ~ .tooltip-content {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .tc-tooltip:hover ~ .tooltip-content {
+    display: block;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.raiting__tc-links {
+  font-size: 12px;
+  position: relative;
+  text-decoration: none;
+  margin: 0 0 20px 0;
+  text-align: right;
+  width: 100%;
+  color: #fff;
+  padding-right: 150px;
+}
+
+@media screen and (min-width: 1200px) {
+  .raiting__tc-links {
+    padding-right: 150px;
+  }
+}
+
+.raiting__tc-links a {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer {
+  background: #1a0a25;
+  padding: 15px 0;
+  display: block;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #804cb9;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.footer__container {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 4%;
+  font-size: 14px;
+}
+
+.footer__item {
+  margin-top: 9px;
+}
+
+.footer__texts {
+  font-size: 12px;
+  font-family: Fredoka One;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__texts {
+    font-size: 14px;
+    font-family: Fredoka One;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__texts {
+    font-size: 14px;
+    font-family: Fredoka One;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .footer__texts {
+    font-size: 14px;
+    font-family: Fredoka One;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+.footer--accent {
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #f9da49;
+  text-underline-position: unset;
+  font-family: Fredoka One;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__thumb {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__thumb {
+    margin-right: 0;
+    align-items: center;
+  }
+}
+
+.footer__thumb--mail {
+  font-size: 14px;
+  font-family: Fredoka One;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.footer__thumb--contact {
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #f9da49;
+  text-underline-position: unset;
+  text-transform: uppercase;
+  font-family: Fredoka One;
+  color: white;
+  line-height: 1.2;
+  text-align: center;
+  margin-left: 80px;
+}
+
+body {
+  color: white;
+}
+
+.button__modal4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  min-height: 30px;
+  min-width: 30px;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__modal4:hover {
+  color: brown;
+}
+
+.icon__close4 {
+  fill: currentColor;
+  width: 18px;
+  height: 18px;
+}
+
+/*# sourceMappingURL=main.min.css.map */
+.modal__close6 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: brown;
+  display: block;
+}
+
+.modal__backdrop6 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.62);
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__backdrop6.is-hidden6 {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__backdrop6.is-hidden6 > .modal6 {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(2.9);
+}
+
+.modal6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(1);
+  width: 90%;
+  height: auto;
+  padding: 15px 15px 0px 15px;
+  background-color: var(--main-title-color);
+  opacity: 1;
+  border-radius: 6px;
+  transition-property: opacity, transform;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--function);
+}
+
+@media screen and (min-width: 480px) {
+  .modal6 {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal6 {
+    width: 528px;
+  }
+}
+
+.modal__close7 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: brown;
+  display: block;
+}
+
+.modal__backdrop7 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.62);
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__backdrop7.is-hidden7 {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__backdrop7.is-hidden7 > .modal7 {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(2.9);
+}
+
+.modal7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(1);
+  width: 90%;
+  height: auto;
+  padding: 15px 15px 0px 15px;
+  background-color: var(--main-title-color);
+  opacity: 1;
+  border-radius: 6px;
+  transition-property: opacity, transform;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--function);
+}
+
+@media screen and (min-width: 480px) {
+  .modal7 {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal7 {
+    width: 528px;
+  }
+}
+
+.modal__close8 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: brown;
+  display: block;
+}
+
+.modal__backdrop8 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.62);
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__backdrop8.is-hidden8 {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__backdrop8.is-hidden8 > .modal8 {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(2.9);
+}
+
+.modal8 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(1);
+  width: 90%;
+  height: auto;
+  padding: 15px 15px 0px 15px;
+  background-color: var(--main-title-color);
+  opacity: 1;
+  border-radius: 6px;
+  transition-property: opacity, transform;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--function);
+}
+
+@media screen and (min-width: 480px) {
+  .modal8 {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal8 {
+    width: 528px;
+  }
+}
+
+.modal__close9 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: brown;
+  display: block;
+}
+
+.modal__backdrop9 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.62);
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__backdrop9.is-hidden9 {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__backdrop9.is-hidden9 > .modal9 {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(2.9);
+}
+
+.modal9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(1);
+  width: 90%;
+  height: auto;
+  padding: 15px 15px 0px 15px;
+  background-color: var(--main-title-color);
+  opacity: 1;
+  border-radius: 6px;
+  transition-property: opacity, transform;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--function);
+}
+
+@media screen and (min-width: 480px) {
+  .modal9 {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal9 {
+    width: 528px;
   }
 }
 /*# sourceMappingURL=main.css.map */
