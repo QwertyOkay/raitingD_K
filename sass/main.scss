@@ -194,20 +194,23 @@
                                                     background-size:cover;
                                                     background-size:100% 100%;
                                                     background-position:center center; */
-                                                    display:flex;align-items:center;justify-content:center}@media screen and (min-width: 768px){
+                                                    display:flex;align-items:center;justify-content:center}
+                                                    @media screen and (min-width: 768px){
                                                         
                                                     .raiting{
                                                         margin-top:-460px;
                                                         /* background-repeat:repeat;
                                                         background-size:cover;
                                                         background-size:100% 100%;
-                                                        background-position:center center */}}@media screen and (min-width: 1200px){
+                                                        background-position:center center */}}
+                                                        @media screen and (min-width: 1200px){
                                                             
                                                     .raiting{
                                                         margin-top:-6px;
                                                         /* background-repeat:no-repeat;
                                                         background-size:cover;
-                                                        background-size:100% 100%; */}}@media screen and (min-width: 1600px){
+                                                        background-size:100% 100%; */}}
+                                                        @media screen and (min-width: 1600px){
                                                             
                                                     .raiting{
                                                         margin-top:43px;
