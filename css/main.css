@@ -93,7 +93,8 @@ progress {
   vertical-align: baseline;
 }
 
-::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -173,7 +174,7 @@ body {
 body {
   font-family: Fredoka One, sans-serif;
   color: #270a3a;
-  background-color: #270a3a;
+  background-color: #010624;
 }
 
 .container {
@@ -2027,7 +2028,7 @@ a {
 }
 
 body {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   background-image: url(../images/bg-mob.png) !important;
   background-position-x: initial;
   background-position-y: initial;
